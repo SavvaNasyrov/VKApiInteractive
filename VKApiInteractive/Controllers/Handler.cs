@@ -1,12 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
-namespace VKApiInteractive.Controllers
+﻿namespace VKApiInteractive.Controllers
 {
-    public class Handler : Controller
+    public class Handler
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+        
     }
 }
