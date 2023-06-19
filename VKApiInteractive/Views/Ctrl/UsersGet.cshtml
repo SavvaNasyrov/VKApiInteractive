@@ -1,14 +1,25 @@
-﻿@{
-    ViewData["title"] = "users.get";
+﻿@page
+
+@model VKApiInteractive.Models.UsersGetModel
+
+@{
+
 }
 
 <nav class="nav-ctrl">
     <a asp-area="" asp-controller="Ctrl" asp-action="UsersGet">users.get</a>
 </nav>
 
-<h1>@ViewData["title"]</h1>
+
 <div class="main">
-    
+    <form method="post" asp-controller="Api" asp-action="Post">
+        <label for="Id">
+            IDS
+            <input type="text" id="Id" name="Id" />
+        </label>
+
+        <button type="submit">Submit</button>
+    </form>
 </div>
 
 
